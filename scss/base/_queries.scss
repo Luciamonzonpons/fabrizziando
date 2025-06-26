@@ -1,0 +1,108 @@
+@media (max-width: 768px) {
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.menu {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.contenedor-logo .logo {
+    width: 300px;
+}
+
+.aventura {
+    flex-direction: column;
+    text-align: center;
+
+img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    }
+}
+
+.consejos .cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagenes {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+    width: 90%;
+    }
+}
+
+form {
+    padding: 30px;
+}
+
+input,
+textarea {
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+}
+}
+@media (max-width: 480px) {
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 0.95rem;
+}
+
+.logo {
+    width: 200px;
+}
+
+.contenedor-logo .logo {
+    width: 250px;
+}
+
+.card {
+    width: 90%;
+}
+
+.imagenes img {
+    width: 100%;
+}
+
+form {
+    padding: 20px;
+}
+
+input,
+textarea {
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+}
+}
