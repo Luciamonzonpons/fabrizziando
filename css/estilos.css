@@ -99,41 +99,62 @@ header .menu li a:hover {
   text-align: center;
   text-transform: uppercase;
   font-size: 30px;
-  color: var(--color-principal);
+  color: #00b4b4;
   font-family: "Playfair Display", serif;
+  margin-bottom: 40px;
 }
 
 .aventura {
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 40px;
-  background-color: rgb(182, 255, 234.3951612903);
-  border-radius: 15px;
+  gap: 30px;
+  margin-bottom: 60px;
   padding: 20px;
+  border-radius: 15px;
+  background-color: rgb(182, 255, 234.3951612903);
   box-shadow: 2px 2px 8px rgba(7, 191, 212, 0.1);
 }
-.aventura img {
-  width: 250px;
-  height: auto;
+.aventura .carousel-container {
+  flex: 1;
+  max-width: 500px;
+}
+.aventura .carousel-container .carousel-inner img {
+  width: 100%;
+  height: 500px;
+  max-height: 600px;
+  object-fit: cover;
   border-radius: 10px;
 }
-.aventura h2,
-.aventura h3 {
+.aventura .texto-aventura {
+  flex: 1;
+  text-align: center;
+  max-width: 600px;
+}
+
+h2, h3 {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
+  margin: 10px 0;
+  color: #00b4b4;
+  text-align: center;
 }
-.aventura h2 {
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.aventura h3 {
+
+h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.aventura p {
+
+p {
   font-size: 18px;
   line-height: 1.4;
   font-family: "Playfair Display", serif;
@@ -269,14 +290,24 @@ footer .redes {
   .contenedor-logo .logo {
     width: 300px;
   }
+}
+@media (max-width: 768px) and (max-width: 768px) {
   .aventura {
     flex-direction: column;
     text-align: center;
   }
-  .aventura img {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 15px;
+  .aventura .carousel-container {
+    max-width: 100%;
+  }
+  .aventura .carousel-inner {
+    height: 300px;
+    max-height: 400px;
+  }
+  .aventura .carousel-inner .carousel-item img {
+    object-fit: cover;
+  }
+  .texto-aventura {
+    padding: 20px;
   }
   .consejos .cards {
     flex-direction: column;
@@ -300,7 +331,7 @@ footer .redes {
     width: 100%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) and (max-width: 480px) {
   h1 {
     font-size: 1.5rem;
   }

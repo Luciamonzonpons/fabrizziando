@@ -26,17 +26,27 @@ p {
     width: 300px;
 }
 
+@media (max-width: 768px) {
 .aventura {
     flex-direction: column;
     text-align: center;
 
-img {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 15px;
+.carousel-container {
+    max-width: 100%;
     }
-}
 
+.carousel-inner {
+    height:300px;
+    max-height:400px;
+
+.carousel-item img{
+    object-fit: cover;
+}
+}
+}
+.texto-aventura{
+    padding: 20px;
+}
 .consejos .cards {
     flex-direction: column;
     align-items: center;
@@ -104,5 +114,6 @@ textarea {
 
 button {
     width: 100%;
+}
 }
 }
