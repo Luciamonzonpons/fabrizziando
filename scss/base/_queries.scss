@@ -30,19 +30,18 @@ p {
 .aventura {
     flex-direction: column;
     text-align: center;
-
+}
 .carousel-container {
     max-width: 100%;
-    }
-
+}
 .carousel-inner {
-    height:300px;
-    max-height:400px;
-
+    height:auto;
+    max-height:none;
+}
 .carousel-item img{
-    object-fit: cover;
-}
-}
+    object-fit: contain;
+    width: 100%;
+    height: auto;
 }
 .texto-aventura{
     padding: 20px;

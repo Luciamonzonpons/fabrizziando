@@ -296,15 +296,17 @@ footer .redes {
     flex-direction: column;
     text-align: center;
   }
-  .aventura .carousel-container {
+  .carousel-container {
     max-width: 100%;
   }
-  .aventura .carousel-inner {
-    height: 300px;
-    max-height: 400px;
+  .carousel-inner {
+    height: auto;
+    max-height: none;
   }
-  .aventura .carousel-inner .carousel-item img {
-    object-fit: cover;
+  .carousel-item img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
   }
   .texto-aventura {
     padding: 20px;
